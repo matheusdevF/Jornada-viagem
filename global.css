@@ -31,7 +31,6 @@ h1 {
 
 .menu {
   font-weight: var(--menu-text-weight);
-  display: flex;
 }
 
 body {
@@ -44,6 +43,10 @@ body, img, h1, p, fieldset, legend, label, input, select, textarea, button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
 }
 
   
