@@ -8,7 +8,7 @@ body {
 
 :root {
 
-     --primary-color: #8F0101;
+     --primary-color: red;
   --secondary-color: #B81515;
 
   --background-primary-color: white;
@@ -16,7 +16,7 @@ body {
   --background-tertiary-color: #000000;
 
 
-  --text-primary-color: #222222;
+  --text-primary-color: #0a020f;
   --text-secondary-color: #FFFFFF;
 
   --title-weight: 700;
