@@ -15,10 +15,10 @@ header {
     display: inline-block;
 }
 
-.logo-mobile {
+.img-mobile {
     display: block;
 }
-.logo-desktop {
+.img-desktop {
    display: none;
 }
 
