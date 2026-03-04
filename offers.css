@@ -35,6 +35,26 @@
 
 }
 
+.card.Japao {
+    background: url(../Jornada-viagem/bg-card-japao.jpg) no-repeat;
+    background-size: cover;
+}
+
+.card.san-andreas {
+    background: url(../Jornada-viagem/bg-card-san.jpg) no-repeat;
+    background-size: cover;
+}
+
+.card.Paraiba {
+    background: url(../Jornada-viagem/bg-card-pb.jpg) no-repeat;
+    background-size: cover;
+}
+
+.card.Manaus {
+    background: url(../Jornada-viagem/bg-card-manaus.jpg) no-repeat;
+    background-size: cover;
+}
+
 @media screen and (min-width: 1024px) {
     .card{
         width: 588px;
