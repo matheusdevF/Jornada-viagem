@@ -1,3 +1,11 @@
+.offers-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px
+
+}
+
 .card {
     color: var(--text-secondary-color);
     background-color: black;
@@ -35,6 +43,36 @@
 
 }
 
+.card.Japao {
+    background: url(../Jornada-viagem/bg-card-japao.jpg) no-repeat;
+    background-size: cover;
+}
+
+.card.san-andreas {
+    background: url(../Jornada-viagem/bg-card-san.jpg) no-repeat;
+    background-size: cover;
+}
+
+.card.Paraiba {
+    background: url(../Jornada-viagem/bg-card-pb.jpg) no-repeat;
+    background-size: cover;
+}
+
+.card.Manaus {
+    background: url(../Jornada-viagem/bg-card-manaus.jpg) no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+
+    .offers-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+
+}
+
 @media screen and (min-width: 1024px) {
     .card{
         width: 588px;
@@ -49,4 +87,20 @@
      font-size: 40px;
     
 }
+}
+
+@media screen and (min-width: 1440px) {
+    .card{
+        width: 488px;
+       
+    }
+}
+
+@media screen and (min-width: 1920px) {
+   
+     .offers-cards {
+        width: 1250px;
+        margin: 0 auto;
+       
+    }
 }
