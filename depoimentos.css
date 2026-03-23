@@ -1,0 +1,77 @@
+.Testemunhas {
+  background-color: var(--background-secondary-color);
+  padding: 56px 24px;
+}
+
+.Testemunhas-container {
+  max-width: 312px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Testemunhas article,
+.Testemunhas article header,
+.Testemunhas article p,
+.Testemunhas article footer,
+.Testemunhas .Profile-content,
+.Testemunhas .rating {
+  background: transparent !important;
+}
+
+.Testemunhas article {
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.Testemunhas article header {
+  width: 100%;
+  margin-bottom: -32px;
+}
+
+.Testemunhas article p {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-align: left;
+  line-height: 1.45;
+  color: var(--text-primary-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+.Testemunhas article footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.Testemunhas img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.Profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Profile-content h4 {
+  margin: 0 0 10px 0;
+  color: var(--text-primary-color);
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  color: var(--primary-color);
+  line-height: 1;
+  font-size: 32px;
+}
