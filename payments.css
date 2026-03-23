@@ -1,0 +1,92 @@
+
+
+.payments .image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.payments .image-gallery .image {
+  width: 100%;
+  height: 238px;
+}
+
+.payments .image-gallery .colspan-2 {
+  grid-column: span 2;
+  height: 184px;
+}
+
+.payments .image-gallery .image.bag {
+  background: url(../Jornada-viagem/bag.png) no-repeat center / cover;
+}
+
+.payments .image-gallery .image.passport {
+  background: url(../Jornada-viagem/passport.png) no-repeat center / cover;
+}
+
+.payments .image-gallery .image.people {
+  background: url(../Jornada-viagem/people.png) no-repeat center / cover;
+}
+
+@media screen and (min-width: 768px) {
+  .payments .image-gallery .image.bag {
+    background-image: url(../Jornada-viagem/Bag-desktop.png);
+  }
+
+  .payments .image-gallery .image.passport {
+    background-image: url(../Jornada-viagem/Passport-desktop.png);
+  }
+
+  .payments .image-gallery .image.people {
+    background-image: url(../Jornada-viagem/People-desktop.png);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .payments {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+  }
+
+  .payments .payments-content {
+    display: grid;
+    grid-template-columns: 220px 460px;
+    justify-content: center;
+    column-gap: 32px;
+    align-items: start;
+    margin-top: 40px;
+  }
+
+  .payments .text-content {
+    margin-top: 0;
+  }
+
+  .payments .payments-content-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .payments .payments-content-text {
+    margin: 0;
+  }
+
+  .payments .image-gallery {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 224px 224px;
+    gap: 12px;
+  }
+
+  .payments .image-gallery .image.bag,
+  .payments .image-gallery .image.passport {
+    height: 126px;
+  }
+
+  .payments .image-gallery .image.people {
+    height: 120px;
+    background-position: center;
+  }
+}
