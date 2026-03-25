@@ -1,71 +1,66 @@
-/* background */
-/* botoes */
-/* cores de texto */
-
 body {
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: var(--text-primary-color);
+  margin: 0;
 }
 
 :root {
-
-     --primary-color: red;
+  --primary-color: red;
   --secondary-color: #B81515;
-
   --background-primary-color: white;
   --background-secondary-color: #f5f5f5;
   --background-tertiary-color: #000000;
-
-
   --text-primary-color: #0a020f;
   --text-secondary-color: #FFFFFF;
-
   --title-weight: 700;
   --menu-text-weight: 500;
-  --text-weight:400; 
-} 
+  --text-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
 
 h1 {
+  font-family: "Montserrat", sans-serif;
   font-weight: var(--title-weight);
-   font-family: "Montserrat", sans-serif;
-   color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .menu {
   font-weight: var(--menu-text-weight);
 }
 
-body {
-  font-weight: 400;
-}
-
-
-/* CSS RESET */
-body, img, h1, p, fieldset, legend, label, input, select, textarea, button {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-    font-family: "Montserrat", sans-serif;
-    color: var(--text-primary-color)
-}
-
 .section-title h2 {
-    font-size: 28px;
-    font-weight: var(--title-weight);
-    margin: 0;
-    text-align: center;
-}
-  
-.section-title hr {
-    width: 180px;
-    height: 4px;
-    background-color: var(--secondary-color);
-    border: none;
-    margin: 16px auto 32px;
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  text-align: center;
 }
 
+.section-title hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px auto 32px;
+}
 
 .payments .text-content {
   padding: 0 32px;
@@ -82,7 +77,6 @@ body {
   font-size: 20px;
   font-weight: var(--text-weight);
   line-height: 1.5;
-  margin: 0;
 }
 
 .button {
@@ -105,7 +99,7 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  .button:hover{
+  .button:hover {
     background-color: var(--primary-color);
   }
 }

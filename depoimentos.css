@@ -1,0 +1,128 @@
+.Testemunhas-container {
+  width: 312px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.Testemunhas article {
+  width: 100%;
+}
+
+.Testemunhas article p {
+  margin: 0 0 24px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+}
+
+.Testemunhas article footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Testemunhas img {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.Testemunhas .Profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Testemunhas .Profile-content h4 {
+  margin: 0 0 10px 0;
+  color: var(--text-primary-color);
+}
+
+.Testemunhas .rating {
+  display: flex;
+  gap: 4px;
+}
+
+.Testemunhas .star {
+  color: var(--primary-color);
+  line-height: 28px;
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .Testemunhas {
+    padding: 56px 24px;
+  }
+
+  .Testemunhas-container {
+    width: 648px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+
+  .Testemunhas article {
+    width: 648px;
+  }
+
+  .Testemunhas article header {
+    margin-bottom: 0;
+  }
+
+  .Testemunhas article p {
+    max-width: 648px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Testemunhas {
+    padding: 80px 96px;
+  }
+
+  .Testemunhas-container {
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 56px;
+    align-items: start;
+  }
+
+  .Testemunhas article {
+    width: 100%;
+    max-width: 370px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Testemunhas article header {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .Testemunhas article p {
+    width: 100%;
+    max-width: 370px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .Testemunhas article footer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+  }
+}
