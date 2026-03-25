@@ -1,14 +1,15 @@
 .Testemunhas {
   background-color: var(--background-secondary-color);
-  padding: 56px 24px;
+  padding: 56px 0;
+  width: 100%;
 }
 
 .Testemunhas-container {
-  max-width: 312px;
+  width: 312px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 0;
 }
 
 .Testemunhas article,
@@ -21,34 +22,35 @@
 }
 
 .Testemunhas article {
-  width: 100%;
-  margin-bottom: 13px;
+  width: 312px;
+  margin: 0;
 }
 
 .Testemunhas article header {
   width: 100%;
-  margin-bottom: -32px;
+  margin-bottom: -28px;
 }
 
 .Testemunhas article p {
   width: 100%;
-  max-width: none;
-  margin: 0;
-  text-align: left;
-  line-height: 1.45;
-  color: var(--text-primary-color);
+  max-width: 312px;
+  margin: -20px 0 0 0;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
 }
 
 .Testemunhas article footer {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
 }
 
 .Testemunhas img {
-  width: 84px;
-  height: 84px;
+  width: 86px;
+  height: 86px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -72,6 +74,87 @@
 
 .star {
   color: var(--primary-color);
-  line-height: 1;
+  line-height: 28px;
   font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .Testemunhas {
+    padding: 56px 24px;
+  }
+
+  .Testemunhas-container {
+    width: 648px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+
+  .Testemunhas article {
+    width: 648px;
+  }
+
+  .Testemunhas article header {
+    margin-bottom: 0;
+  }
+
+  .Testemunhas article p {
+    max-width: 648px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Testemunhas {
+    padding: 80px 96px;
+  }
+
+  .Testemunhas-container {
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 312px);
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 48px;
+    row-gap: 0;
+  }
+
+  .Testemunhas article {
+    width: 312px !important;
+    max-width: 312px !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Testemunhas article header {
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+
+  .Testemunhas article p {
+    width: 312px !important;
+    max-width: 312px !important;
+    margin: 0 !important;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .Testemunhas article footer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px !important;
+  }
+
+  .Testemunhas img {
+    width: 86px;
+    height: 86px;
+  }
+
+  .Profile-content h4 {
+    margin: 0 0 8px 0;
+  }
 }
