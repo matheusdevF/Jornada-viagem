@@ -1,40 +1,17 @@
-.Testemunhas {
-  background-color: var(--background-secondary-color);
-  padding: 56px 0;
-  width: 100%;
-}
-
 .Testemunhas-container {
   width: 312px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 0;
-}
-
-.Testemunhas article,
-.Testemunhas article header,
-.Testemunhas article p,
-.Testemunhas article footer,
-.Testemunhas .Profile-content,
-.Testemunhas .rating {
-  background: transparent !important;
+  gap: 40px;
 }
 
 .Testemunhas article {
-  width: 312px;
-  margin: 0;
-}
-
-.Testemunhas article header {
   width: 100%;
-  margin-bottom: -28px;
 }
 
 .Testemunhas article p {
-  width: 100%;
-  max-width: 312px;
-  margin: -20px 0 0 0;
+  margin: 0 0 24px 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -45,7 +22,7 @@
 .Testemunhas article footer {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 
 .Testemunhas img {
@@ -56,23 +33,23 @@
   flex-shrink: 0;
 }
 
-.Profile-content {
+.Testemunhas .Profile-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Profile-content h4 {
+.Testemunhas .Profile-content h4 {
   margin: 0 0 10px 0;
   color: var(--text-primary-color);
 }
 
-.rating {
+.Testemunhas .rating {
   display: flex;
   gap: 4px;
 }
 
-.star {
+.Testemunhas .star {
   color: var(--primary-color);
   line-height: 28px;
   font-size: 32px;
@@ -100,6 +77,7 @@
   .Testemunhas article p {
     max-width: 648px;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
   }
 }
 
@@ -113,48 +91,38 @@
     max-width: 1248px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 312px);
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 56px;
     align-items: start;
-    column-gap: 48px;
-    row-gap: 0;
   }
 
   .Testemunhas article {
-    width: 312px !important;
-    max-width: 312px !important;
-    margin: 0 !important;
+    width: 100%;
+    max-width: 370px;
+    margin: 0;
     display: flex;
     flex-direction: column;
   }
 
   .Testemunhas article header {
     width: 100%;
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
 
   .Testemunhas article p {
-    width: 312px !important;
-    max-width: 312px !important;
-    margin: 0 !important;
+    width: 100%;
+    max-width: 370px;
+    margin: 0;
     font-size: 16px;
     line-height: 28px;
     text-align: left;
+    font-family: "Montserrat", sans-serif;
   }
 
   .Testemunhas article footer {
     display: flex;
     align-items: center;
     gap: 24px;
-    margin-top: 24px !important;
-  }
-
-  .Testemunhas img {
-    width: 86px;
-    height: 86px;
-  }
-
-  .Profile-content h4 {
-    margin: 0 0 8px 0;
+    margin-top: 24px;
   }
 }
