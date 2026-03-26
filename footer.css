@@ -1,0 +1,169 @@
+.footer {
+  background-color: #000;
+  color: var(--text-secondary-color);
+  margin-top: 32px;
+}
+
+.bottom-hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.bottom-hero picture,
+.bottom-hero img {
+  display: block;
+  width: 100%;
+}
+
+.bottom-hero img {
+  height: 430px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer-content {
+  background-color: #000;
+  text-align: center;
+  padding: 40px 32px 56px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.footer-logo {
+  display: block;
+  width: 170px;
+  margin: 0;
+}
+
+.footer-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-hours,
+.footer-days,
+.footer-copy,
+.footer-social-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+}
+
+.footer-hours {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.footer-days {
+  display: block;
+  margin-top: 4px;
+}
+
+.footer-copy {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 28px;
+  }
+
+  .bottom-hero img {
+    height: 402px;
+  }
+
+  .footer-content {
+    padding: 40px 32px 48px;
+  }
+
+  .footer-brand {
+    margin-bottom: 32px;
+  }
+
+  .footer-logo {
+    width: 180px;
+  }
+
+  .footer-days {
+    display: inline;
+    margin-top: 0;
+  }
+
+  
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .footer {
+    margin-top: 33px;
+  }
+
+  .bottom-hero {
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .bottom-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .footer-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 48px 80px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 80px;
+    text-align: left;
+  }
+
+  .footer-left {
+    align-items: flex-start;
+  }
+
+  .footer-brand {
+    justify-content: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .footer-logo {
+    width: 160px;
+  }
+
+  .footer-texts {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-hours,
+  .footer-copy {
+    text-align: left;
+  }
+
+  .footer-days {
+    display: inline;
+    margin: 0;
+  }
+
+  
+  
