@@ -1,0 +1,196 @@
+.footer {
+  background-color: #000;
+  color: var(--text-secondary-color);
+  margin-top: 32px;
+}
+
+.bottom-hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.bottom-hero img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.footer-content {
+  background-color: #000;
+  text-align: center;
+  padding: 40px 32px 56px;
+}
+
+.footer-brand {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo {
+  display: block;
+  width: 170px;
+  margin: 0 auto 24px;
+}
+
+.footer-hours,
+.footer-days,
+.footer-copy,
+.footer-social-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+}
+
+.footer-hours {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 8px 0;
+}
+
+.footer-days {
+  display: block;
+  margin-top: 4px;
+}
+
+.footer-copy {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 320px;
+  margin: 0 auto 24px;
+}
+
+.footer-social-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 16px 0;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-icons a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons i {
+  font-size: 24px;
+  line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 56px;
+  }
+
+  .bottom-hero img {
+    height: 402px;
+  }
+
+  .footer-content {
+    padding: 40px 32px 48px;
+  }
+
+  .footer-logo {
+    width: 180px;
+    margin-bottom: 32px;
+  }
+
+  .footer-hours {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .footer-days {
+    display: inline;
+    margin-top: 0;
+  }
+
+  .footer-copy {
+    max-width: none;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    margin-top: 80px;
+  }
+
+  .bottom-hero img {
+    height: 300px;
+  }
+
+  .footer-content {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    align-items: center;
+    column-gap: 40px;
+    text-align: left;
+  }
+
+  .footer-brand {
+    justify-content: flex-start;
+  }
+
+  .footer-logo {
+    width: 150px;
+    margin: 0;
+  }
+
+  .footer-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-hours {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .footer-days {
+    display: inline;
+    margin: 0;
+  }
+
+  .footer-copy {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    max-width: none;
+  }
+
+  .footer-social {
+    text-align: center;
+    justify-self: end;
+  }
+
+  .footer-social-text {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 12px 0;
+  }
+
+  .footer-icons {
+    gap: 12px;
+  }
+
+  .footer-icons i {
+    font-size: 20px;
+  }
+}
